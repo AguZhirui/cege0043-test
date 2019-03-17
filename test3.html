@@ -1,8 +1,33 @@
 <!doctype html>
 <head>
-<title>cege0043-week5 practice</title>
+<title>Question Form Creation Example</title>
 </head>
 <body>
-This is test 3
+<h2> This is a question form</h2>
+<div>
+<h4> Please fill the form</h4>	
+<label for="name">Name</label><input type="text" size="25" id="name"/><br />
+<label for="surname">Surname</label><input type="text" size="25" id="surname"/><br/>
+<label for="latitude">Latitude</label><input type="text" size="25" id="latitude"><br />
+<label for="longitude">Longitude</label><input type="text" size="25" id="longitude"><br />
+
+
+<p>How many columns are there in the main library portico?</p>
+<select name="numberselectbox" id="numberselectbox">
+<option>7</option>
+<option>8</option>
+<option>9</option>
+<option>10</option>
+<option>11</option>
+<option>12</option>
+</select>
+<br />
+
+
+<button id="startUpload" onclick="startDataUpload()">Start Data Upload</button>
+<div id="dataUploadResult">The result of the upload goes here</div>
+
+<script src="uploadData.js"> </script>
+
 </body>
 </html>

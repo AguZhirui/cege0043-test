@@ -1,8 +1,32 @@
 <!doctype html>
 <head>
-<title>cege0043-week5 practice</title>
+<title>Question Form Creation Example</title>
 </head>
 <body>
-This is test 2
+<h2> This is a question form</h2>
+<div>
+<h4> Please fill the form</h4>	
+<label for="name">Name</label><input type="text" size="25" id="name"/><br />
+<label for="surname">Surname</label><input type="text" size="25" id="surname"/><br/>
+<label for="latitude">Latitude</label><input type="text" size="25" id="latitude"><br />
+<label for="longitude">Longitude</label><input type="text" size="25" id="longitude"><br />
+
+
+
+<p>What's the colour of external wall in Cruciform Building?</p>
+<select name="colourselectbox" id="colourselectbox">
+<option>Off-white</option>
+<option>Reddish brown</option>
+<option>Greyish-green</option>
+</select>
+<br />
+
+
+
+<button id="startUpload" onclick="startDataUpload()">Start Data Upload</button>
+<div id="dataUploadResult">The result of the upload goes here</div>
+
+<script src="uploadData.js"> </script>
+
 </body>
 </html>
